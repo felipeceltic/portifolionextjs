@@ -14,8 +14,8 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
-
-
+import Image from 'next/image';
+import MapaUsuario from '@/components/MapaUsuario';
 
 export default function Home() {
   return (
@@ -33,7 +33,13 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p>Uma plataforma para psicólogos que organiza toda a burocracia da profissão, além de possibilitar a emissão de laudos e relatórios personalizados, e organização das finanças com integrações de pagamento com a plataforma Stripe.</p>
-                  <img className="rounded-xl w-full" src="https://www.clinicaidee.com.br/img/plans/1.webp" alt="clinicaidee" />
+                  <Image
+                    src="/clinicaidee.jpg"
+                    alt="clinicaidee"
+                    className="rounded-xl w-full"
+                    width={1920}
+                    height={1080}
+                  />
                 </CardContent>
                 <CardFooter>
                   <Button variant="outline" asChild>
@@ -50,12 +56,30 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p>Este projeto é o meu primeiro utilizando este framework o qual estou aprendendo junto ao React para aproveitar estes estudos no meu trabalho em tempo integral de consultor Zendesk</p>
+                  <Image
+                    src="/contatos.jpg"
+                    alt="Portifolio"
+                    className="rounded-xl w-full"
+                    width={1920}
+                    height={1080}
+                  />
                 </CardContent>
                 <CardFooter>
                   <Button variant="outline" asChild>
                     <a href="https://www.github.com/felipeceltic" target="_blank">Visitar</a>
                   </Button>
                 </CardFooter>
+              </Card>
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="w-full">
+                <CardHeader>
+                  <CardTitle>Sua Localização</CardTitle>
+                  <CardDescription>Desenvolvido em Next.js + React + Leaflet map</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <MapaUsuario />
+                </CardContent>
               </Card>
             </CarouselItem>
           </CarouselContent>

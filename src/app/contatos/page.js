@@ -14,15 +14,9 @@ export default function Contatos() {
           <form>
             <div className="flex flex-col gap-6">
               <div className="flex flex-col items-center gap-2">
-                <a
-                  href="#"
-                  className="flex flex-col items-center gap-2 font-medium"
-                >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-md">
-                    <GalleryVerticalEnd className="size-6" />
-                  </div>
-                  <span className="sr-only">Acme Inc.</span>
-                </a>
+                <div className="flex h-8 w-8 items-center justify-center rounded-md">
+                  <GalleryVerticalEnd className="size-6" />
+                </div>
                 <h1 className="text-xl font-bold">Olá, me chamo Luiz Felipe</h1>
                 <h2 className="text-xl text-center">sou consultor certificado Zendesk e amo desenvolver aplicações que te ajudam a crescer.</h2>
               </div>
