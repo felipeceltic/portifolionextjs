@@ -57,7 +57,7 @@ export default function Home() {
                 <CardContent>
                   <p>Este projeto é o meu primeiro utilizando este framework o qual estou aprendendo junto ao React para aproveitar estes estudos no meu trabalho em tempo integral de consultor Zendesk</p>
                   <Image
-                    src="/contatos.jpg"
+                    src="/Contatos.jpg"
                     alt="Portifolio"
                     className="rounded-xl w-full"
                     width={1920}
